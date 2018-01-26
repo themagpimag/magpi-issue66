@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MagPiHelloTriangle" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/MagPiHelloTriangle" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../../../../opt/vc/include" />
+					<Add directory="../../../../../opt/vc/include/interface/vcos/pthreads" />
+					<Add directory="../../../../../opt/vc/include/interface/vmcs_host/linux" />
+				</Compiler>
+				<Linker>
+					<Add library="../../../../../opt/vc/lib/libbcm_host.so" />
+					<Add library="../../../../../opt/vc/lib/libEGL.so" />
+					<Add library="../../../../../opt/vc/lib/libGLESv2.so" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/MagPiHelloTriangle" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Game.cpp" />
+		<Unit filename="Game.h" />
+		<Unit filename="MagPiHelloTriangle.cpp" />
+		<Unit filename="OGL.cpp" />
+		<Unit filename="OGL.h" />
+		<Unit filename="SimpleObj.cpp" />
+		<Unit filename="SimpleObj.h" />
+		<Unit filename="Source.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
